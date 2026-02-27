@@ -45,10 +45,61 @@
         <url-pattern>/area</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Session_login</servlet-name>
+        <servlet-class>com.demo.Session_login</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Session_login</servlet-name>
+        <url-pattern>/session_login</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Welcome_servlet</servlet-name>
+        <servlet-class>com.demo.Welcome_servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Welcome_servlet</servlet-name>
+        <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>com.demo.Logout</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+     <servlet>
+        <servlet-name>CookieServlet</servlet-name>
+        <servlet-class>com.demo.CookieServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CookieServlet</servlet-name>
+        <url-pattern>/cookieServlet</url-pattern>
+    </servlet-mapping>
+
+
+     <servlet>
+        <servlet-name>CookieWelcome</servlet-name>
+        <servlet-class>com.demo.CookieWelcome</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CookieWelcome</servlet-name>
+        <url-pattern>/cookieWelcome</url-pattern>
+    </servlet-mapping>
+
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 
 
 </web-app>
-
