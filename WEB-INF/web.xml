@@ -76,10 +76,100 @@
         <url-pattern>/logout</url-pattern>
     </servlet-mapping>
 
+     <servlet>
+        <servlet-name>CookieServlet</servlet-name>
+        <servlet-class>com.demo.CookieServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CookieServlet</servlet-name>
+        <url-pattern>/cookieServlet</url-pattern>
+    </servlet-mapping>
+
+
+     <servlet>
+        <servlet-name>CookieWelcome</servlet-name>
+        <servlet-class>com.demo.CookieWelcome</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CookieWelcome</servlet-name>
+        <url-pattern>/cookieWelcome</url-pattern>
+    </servlet-mapping>
+
+      <servlet>
+        <servlet-name>HiddenServlet</servlet-name>
+        <servlet-class>com.demo.HiddenServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HiddenServlet</servlet-name>
+        <url-pattern>/hiddenServlet</url-pattern>
+    </servlet-mapping>
+
+
+     <servlet>
+        <servlet-name>HiddenWelcome</servlet-name>
+        <servlet-class>com.demo.HiddenWelcome</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HiddenWelcome</servlet-name>
+        <url-pattern>/hiddenWelcome</url-pattern>
+    </servlet-mapping>
+  
+
+  <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.demo.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login1    </url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome Servlet -->
+    <servlet>
+        <servlet-name>WelcomeServlet</servlet-name>
+        <servlet-class>com.demo.WelcomeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>WelcomeServlet</servlet-name>
+        <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
+
+    <!-- Logout -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.demo.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <!-- Filter -->
+    <filter>
+        <filter-name>AuthFilter</filter-name>
+        <filter-class>com.demo.AuthFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>AuthFilter</filter-name>
+        <url-pattern>/welcome</url-pattern>
+    </filter-mapping>
+
+    <!-- Listener -->
+    <listener>
+        <listener-class>com.demo.MyListener</listener-class>
+    </listener>
+
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 
 
 </web-app>
-
